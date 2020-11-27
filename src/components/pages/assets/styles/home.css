@@ -1,0 +1,45 @@
+.home {
+  margin-top: 70px;
+}
+
+.card {
+  color: black;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-div {
+  width: 20rem;
+}
+
+.card-div-1 {
+  animation-name: slidein;
+  animation-duration: 2s;
+}
+
+.card-title {
+  font-size: 28px;
+  margin: 10px 15px
+}
+
+p.card-text {
+  padding: 0px 15px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #269fae;
+  border-color: #ffffff;
+  font-size: 20px;
+  box-shadow: 0px 0px 8px #7e7e7e;
+  margin: 10px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -50%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
