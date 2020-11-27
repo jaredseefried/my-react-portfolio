@@ -6,15 +6,15 @@ body {
 
 .nav {
   background-color: #269fae;
-  height: 75px;
+  height: 90px;
   box-shadow: 0px 3px 6px #00000085;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .nav-link {
   color: #fff;
   float: left;
-  /* width: 100%; */
+  margin-top: 7px;
 }
 
 .nav-link:hover {
@@ -27,7 +27,7 @@ body {
 
 .nav-item {
   padding-left: 10%;
-  padding-top: 9px;
+  padding-top: 10px;
 }
 
 .nav-item:before {
@@ -35,8 +35,7 @@ body {
   content: '(';
   color: white;
   margin-left: -10px;
-  padding-top: 5px;
-  font-size: 28px;
+  font-size: 50px;
   transition: all 0.3s;
   opacity: 0;
   transform: translateX(5px);
@@ -46,8 +45,7 @@ body {
   content: ')';
   color: white;
   float: left;
-  font-size: 28px;
-  padding-top: 5px;
+  font-size: 50px;
   transition: all 0.3s;
   opacity: 0;
   transform: translateX(-5px);
