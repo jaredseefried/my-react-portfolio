@@ -1,15 +1,15 @@
 .nav {
   /* background-color: #269fae; */
   background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  height: 90px;
+  height: 50px;
   box-shadow: 0px 0px 21px #000;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .nav-link {
   color: #fff;
   float: left;
-  margin-top: 7px;
+  /* margin-top: 7px; */
 }
 
 .nav-link:hover {
@@ -22,7 +22,7 @@
 
 .nav-item {
   /* padding-left: 10%; */
-  padding-top: 10px;
+  /* padding-top: 10px; */
   display: block;
   margin: 0 auto;
 }
@@ -32,20 +32,22 @@
   content: '(';
   color: white;
   margin-left: -10px;
-  font-size: 50px;
+  font-size: 32px;
   transition: all 0.3s;
   opacity: 0;
   transform: translateX(5px);
+  margin-top: 3px;
 }
 
 .nav-item:after {
   content: ')';
   color: white;
   float: left;
-  font-size: 50px;
+  font-size: 32px;
   transition: all 0.3s;
   opacity: 0;
   transform: translateX(-5px);
+  margin-top: 3px;
 }
 
 .nav-item:hover:before {
