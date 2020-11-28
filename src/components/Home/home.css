@@ -1,5 +1,5 @@
 .home {
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .card-div {
@@ -7,14 +7,16 @@
   animation-duration: 2s;
 }
 
-.home-card {
+.card {
   color: black;
   display: block;
   margin: 0 auto;
+  /* width: 24rem; */
+  box-shadow: 0px 0px 21px #000;
   width: 24rem;
 }
 
-.title-card {
+.card-title {
   font-size: 28px;
   margin: 10px 15px
 }
@@ -31,6 +33,7 @@ p.card-text {
   box-shadow: 0px 0px 8px #7e7e7e;
   margin: 10px;
 }
+
 
 @keyframes slidein {
   from {

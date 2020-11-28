@@ -5,8 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #353535; */
+  background: linear-gradient(60deg, rgb(37, 37, 37) 0%, rgb(70, 70, 70) 100%);
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
