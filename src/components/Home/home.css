@@ -2,22 +2,19 @@
   margin-top: 70px;
 }
 
-.card {
-  color: black;
-  display: block;
-  margin: 0 auto;
-}
-
 .card-div {
-  width: 20rem;
-}
-
-.card-div-1 {
   animation-name: slidein;
   animation-duration: 2s;
 }
 
-.card-title {
+.home-card {
+  color: black;
+  display: block;
+  margin: 0 auto;
+  width: 24rem;
+}
+
+.title-card {
   font-size: 28px;
   margin: 10px 15px
 }

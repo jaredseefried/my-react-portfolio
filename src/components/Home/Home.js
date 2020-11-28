@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../src/components/pages/assets/styles/home.css'
+import './home.css'
 
 function Home() {
 
@@ -8,34 +8,34 @@ function Home() {
     <div className="home container-fluid col-12">
       <div className="row">
 
-        <div className="col-3 card-div-1 card-div">
-          <div className="card">
+        <div className="col-3 card-div">
+          <div className="card home-card">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Front End Development</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div className="col-3 card-div-1">
-          <div className="card">
+        <div className="col-3 card-div">
+          <div className="card home-card">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Back End Development</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div className="col-3 card-div-1">
-          <div className="card ">
+        <div className="col-3 card-div">
+          <div className="card home-card">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Portfolio</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div className="col-3 card-div-1">
-          <div className="card">
+        <div className="col-3 card-div">
+          <div className="card home-card">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title title-card">Contact</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
