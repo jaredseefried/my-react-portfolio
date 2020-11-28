@@ -5,6 +5,12 @@
 .card-div {
   animation-name: slidein;
   animation-duration: 2s;
+  margin-top: 20px;
+}
+
+.card-img-top{
+  height: 160px;
+  object-fit: cover;
 }
 
 .card {

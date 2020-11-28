@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navigation from "./components/Navigation/Navigation.js";
-import Home from "./components/Home/Home";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Home from "./components/pages/Home/Home";
+import Portfolio from "./components/pages/Portfolio/Portfolio";
 import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navigation />
         <Route exact path="/" component={Home} />
         <Route exact path="/portfolio" component={Portfolio} />
+        <Footer />
       </div>
     </Router>
   );
