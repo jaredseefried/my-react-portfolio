@@ -10,7 +10,7 @@
 
 .header-title {
   overflow: hidden;
-  animation: animated-text 5s steps(48, end) 2s 1 normal both, animated-cursor 600ms steps(48, end) infinite;
+  animation: animated-text 5s steps(48, end) 3s 1 normal both, animated-cursor 600ms steps(48, end) infinite;
   white-space: nowrap;
 }
 

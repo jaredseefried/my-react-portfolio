@@ -1,9 +1,45 @@
-.contact-card{
+.contact-card {
   width: 40rem;
   margin: 30px auto;
 }
 
-.contact-img{
-  height: fit-content;
-  object-fit: cover;
+.contact-title{
+  margin: 0px 15px 21px 0px;
 }
+
+.card-div-contact {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 15px;
+  margin: 16px;
+  background: #eee;
+  border-radius: 7px;
+}
+
+.contact-img {
+  height: 100%;
+  object-fit: cover;
+  width: 211px;
+}
+
+.profile-pic {
+  border-radius: 10%;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.contact-info {
+  float: right;
+  width: 67%;
+  /* margin-top: -5px; */
+  padding: 10px;
+  /* background: #eee;
+  border-radius: 5px; */
+}
+
+.github-btn{
+  margin-top: 15px;
+  margin-left: 10px;
+
+}
+

@@ -1,3 +1,26 @@
-.footer{
-  margin-bottom: auto;
+.footer {
+  margin: 50px auto;
+  width: 95%
+}
+
+.footer-icons {
+  height: 50px;
+    border-radius: 7px;
+}
+
+.footer-icons {
+  animation: slideup 3s;
+}
+
+@keyframes slideup {
+  from {
+    height: 1px;
+    opacity: 0;
+    margin-bottom: -50%;
+  }
+  to {
+    height: 50px;
+    opacity: 1;
+    margin-top: 0%;
+  }
 }

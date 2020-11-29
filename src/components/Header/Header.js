@@ -7,7 +7,7 @@ function Header(){
     <div className="header-container container-fluid col-12">
       
       <div className="row">
-        <h1 className="header-title text-center display-1">Hello, I'm Jared! I'm a Full Stack Developer( )</h1>
+        <h1 className="header-title text-center display-1">&lt;Hello, I'm Jared! I'm a Full Stack Developer /&gt;</h1>
       </div>
     </div>
   )

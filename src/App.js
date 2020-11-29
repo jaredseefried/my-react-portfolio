@@ -6,7 +6,9 @@ import Home from "./components/pages/Home/Home";
 import Portfolio from "./components/pages/Portfolio/Portfolio";
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
-import Conatct from './components/pages/Contact/Contact'
+import Contact from './components/pages/Contact/Contact'
+import FrontEndDev from "./components/pages/FrontEndDev/FrontEndDev.js";
+import BackEndDev from "./components/pages/BackEndDev/BackEndDev.js";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Navigation />
         <Route exact path="/" component={Home} />
         <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Conatct} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/font-end-dev" component={FrontEndDev} />
+        <Route exact path="/back-end-dev" component={BackEndDev} />
         <Footer />
       </div>
     </Router>

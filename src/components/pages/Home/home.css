@@ -43,9 +43,11 @@ p.card-text {
 
 @keyframes slidein {
   from {
+    opacity: 0;
     margin-left: -50%;
   }
   to {
+    opacity: 1;
     margin-right: 0%;
   }
 }
