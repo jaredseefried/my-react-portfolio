@@ -1,6 +1,7 @@
 import React from 'react'
 import './contact.css'
 import GitHubButton from 'react-github-btn'
+import { AiOutlineLinkedin } from 'react-icons/ai'
 
 function Contact() {
 
@@ -24,16 +25,35 @@ function Contact() {
               <div className="github-btn" >
                 <GitHubButton href="https://github.com/jaredseefried" data-color-scheme="no-preference: light; light: dark; dark: dark;" data-size="large" aria-label="Follow @jaredseefried on GitHub">Follow @jaredseefried</GitHubButton>
               </div>
+              <div className="linkedIn-div">
+                <button type="button" className="linkedIn-btn">
+                  <AiOutlineLinkedin className="linkedIn-icon" />
+                  <p className="p-btn">Connect with me on LinkedIn</p>
+                </button>
+              </div>
+              <div className="form contact-form">
+                <div className="input-group mb-3">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">Name</span>
+                  </div>
+                  <input type="text" className="form-control" />
+                </div>
+                <div className="input-group mb-3">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">Email</span>
+                  </div>
+                  <input type="text" className="form-control" />
+                </div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Subject</span>
+                  </div>
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="contact-form">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-          </div>
+
         </div>
       </div>
 

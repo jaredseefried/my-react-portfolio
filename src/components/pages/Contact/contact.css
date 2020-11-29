@@ -3,7 +3,7 @@
   margin: 30px auto;
 }
 
-.contact-title{
+.contact-title {
   margin: 0px 15px 21px 0px;
 }
 
@@ -37,9 +37,41 @@
   border-radius: 5px; */
 }
 
-.github-btn{
+.github-btn {
   margin-top: 15px;
   margin-left: 10px;
-
 }
 
+.contact-form {
+  margin-top: 20px;
+}
+
+.linkedIn-btn {
+  padding-top: 3px;
+  margin-left: 9px;
+  border-radius: 3px;
+  background: linear-gradient(0deg, #0456a9, #1e85ec);
+  font-size: 13px;
+  /* padding: 10px; */
+  color: white;
+  /* font-weight: bold; */
+  height: 32px;
+  border: none;
+}
+
+.linkedIn-icon {
+  width: 23px;
+  height: auto;
+  margin-right: 4px;
+  /* margin-top: 2px; */
+}
+
+.p-btn {
+  float: right;
+  margin-top: 3px;
+}
+
+.input-group-text {
+  background: rgb(27 127 227);
+  color: white;
+}
