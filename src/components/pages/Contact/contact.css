@@ -1,0 +1,9 @@
+.contact-card{
+  width: 40rem;
+  margin: 30px auto;
+}
+
+.contact-img{
+  height: fit-content;
+  object-fit: cover;
+}

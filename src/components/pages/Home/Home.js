@@ -37,7 +37,7 @@ function Home() {
             <img className="card-img-top" src="https://previews.123rf.com/images/279photo/279photo1705/279photo170501991/81032796-client-support-service-workdesk-with-contact-us-signs-dark-background-top-view-mockup.jpg" alt="" />
             <h5 className="card-title title-card">Contact</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <a href="/contact" className="btn btn-primary">Go somewhere</a>
           </div>
         </div>
 
