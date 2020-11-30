@@ -1,4 +1,3 @@
-const Contact = require("./model/contact-form");
 const express = require("express");
 const mongoose = require("mongoose");
 
@@ -30,6 +29,9 @@ app.post("/submit", ({ body }, res) => {
       res.json(err);
     });
 });
+
+// routes
+app.use(require("./routes/api-routes"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
