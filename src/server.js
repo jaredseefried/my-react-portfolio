@@ -18,17 +18,7 @@ const options = {
   useCreateIndex: true,
   useFindAndModify: false
 }
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolioContactForm", options) });
-
-app.post("/submit", ({ body }, res) => {
-  Contact.create(body)
-    .then(contactUser => {
-      res.json(contactUser);
-    })
-    .catch(err => {
-      res.json(err);
-    });
-});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolioContactForm", options);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
