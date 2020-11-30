@@ -37,24 +37,24 @@ function Contact() {
                   <div className="input-group-prepend">
                     <span className="input-group-text">Name</span>
                   </div>
-                    <input type="text" aria-label="First name" class="form-control" />
-                    <input type="text" aria-label="Last name" class="form-control" />
+                    <input type="text" name="firstName" placeholder="First Name" aria-label="First name" class="form-control" />
+                    <input type="text" name="lastName" placeholder="Last Name" aria-label="Last name" class="form-control" />
                   </div>
                 </div>
                 <div className="input-group mb-3">
                   <div className="input-group-prepend">
                     <span className="input-group-text">Email</span>
                   </div>
-                  <input type="text" className="form-control" />
+                  <input type="text" placeholder="Email" name="email" className="form-control" autofocus/>
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">Subject</span>
                   </div>
-                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                  <textarea class="form-control" name="subject" placeholder="Enter a subject" aria-label="With textarea"></textarea>
                 </div>
               </div>
-              <button type="submit" className="btn btn-primary submit-form">Submit</button>
+              <button type="submit" className="btn btn-primary submit-btn">Submit</button>
             </div>
           </div>
 

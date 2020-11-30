@@ -1,11 +1,10 @@
 import React from 'react'
-import { BiPlusMedical } from 'react-icons/bi'
-import './frontEndDev.css'
+import './backEndDev.css'
 
 function BackEndDev() {
   return (
     <div className="backEndDev-container col-12">
-      <h1 className="back-end-dev-container col-12">Back end Page</h1> 
+      <img src="https://m.media-amazon.com/images/I/61nt34iuBkL._SS500_.jpg" alt="..." className=" col-12 coming-soon" />
     </div>
   )
 }

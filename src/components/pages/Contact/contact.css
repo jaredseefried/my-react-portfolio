@@ -69,3 +69,8 @@
   background: rgb(27 127 227);
   color: white;
 }
+
+.submit-btn{
+  margin-left: 1px;
+  background:linear-gradient(0deg,#000, rgb(80, 79, 79));
+}
