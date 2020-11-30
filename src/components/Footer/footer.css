@@ -24,3 +24,11 @@
     margin-top: 0%;
   }
 }
+
+@media only screen and (max-width: 990px){
+  .footer-icons{
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 21px;
+  }
+}

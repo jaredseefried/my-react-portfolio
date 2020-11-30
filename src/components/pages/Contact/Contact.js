@@ -34,9 +34,12 @@ function Contact() {
               <div className="form contact-form">
                 <div className="input-group mb-3">
                   <div className="input-group-prepend">
+                  <div className="input-group-prepend">
                     <span className="input-group-text">Name</span>
                   </div>
-                  <input type="text" className="form-control" />
+                    <input type="text" aria-label="First name" class="form-control" />
+                    <input type="text" aria-label="Last name" class="form-control" />
+                  </div>
                 </div>
                 <div className="input-group mb-3">
                   <div className="input-group-prepend">
