@@ -9,10 +9,10 @@ function Navigation() {
           <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">Front End Dev</a>
+          <a className="nav-link" href="/front-end-dev">Front End Dev</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">Back End Dev</a>
+          <a className="nav-link" href="/back-end-dev">Back End Dev</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/portfolio">Portfolio</a>
