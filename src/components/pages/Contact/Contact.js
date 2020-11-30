@@ -31,7 +31,7 @@ function Contact() {
                   <p className="p-btn">Connect with me on LinkedIn</p>
                 </button>
               </div>
-              <div className="form contact-form">
+              <div className="form contact-form" action="/submit" method="post">
                 <div className="input-group mb-3">
                   <div className="input-group-prepend">
                   <div className="input-group-prepend">
@@ -54,6 +54,7 @@ function Contact() {
                   <textarea class="form-control" aria-label="With textarea"></textarea>
                 </div>
               </div>
+              <button type="submit" className="btn btn-primary submit-form">Submit</button>
             </div>
           </div>
 
