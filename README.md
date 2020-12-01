@@ -1,4 +1,4 @@
-# My Developer Portfolio using React.js, Express.js, Mongo.js, Mongoose.js 
+# My Developer Portfolio using MERN 
 
 ![Employee tracker with react](./client/public/images/readme-image.jpg)
 
