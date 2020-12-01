@@ -11,8 +11,8 @@ function Group() {
           <div className="card portfolio-card">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
             <div className="card-body body-card">
-              <h5 class="card-title">Front End Development</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 className="card-title">Front End Development</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
             </div>
           </div>
@@ -21,8 +21,8 @@ function Group() {
           <div className="card portfolio-card">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
             <div className="card-body body-card">
-              <h5 class="card-title">Front End Development</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 className="card-title">Front End Development</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
             </div>
           </div>
@@ -31,8 +31,8 @@ function Group() {
           <div className="card portfolio-card align-middle">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
             <div className="card-body body-card">
-              <h5 class="card-title">Front End Development</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 className="card-title">Front End Development</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
             </div>
           </div>

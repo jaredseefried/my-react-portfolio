@@ -2,13 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navigation from "./components/Navigation/Navigation.js";
-import Home from "./components/pages/Home/Home";
-import Portfolio from "./components/pages/Portfolio/Portfolio";
+import Home from "./pages/Home/Home";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
-import Contact from './components/pages/Contact/Contact'
-import FrontEndDev from "./components/pages/FrontEndDev/FrontEndDev.js";
-import BackEndDev from "./components/pages/BackEndDev/BackEndDev.js";
+import Contact from './pages/Contact/Contact'
+import FrontEndDev from "./pages/FrontEndDev/FrontEndDev.js";
+import BackEndDev from "./pages/BackEndDev/BackEndDev";
 
 function App() {
   return (

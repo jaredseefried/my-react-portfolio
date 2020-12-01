@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
-import Group from '../../Group/Group'
-import Individual from '../../Individual/Individual'
+import Group from '../../components/Group/Group'
+import Individual from '../../components/Individual/Individual'
 
 function Portfolio() {
 

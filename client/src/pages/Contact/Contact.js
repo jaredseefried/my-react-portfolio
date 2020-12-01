@@ -45,7 +45,7 @@ function Contact() {
                   <div className="input-group-prepend">
                     <span className="input-group-text">Email</span>
                   </div>
-                  <input type="text" placeholder="Email" name="email" className="form-control" autofocus/>
+                  <input type="text" placeholder="Email" name="email" className="form-control" />
                 </div>
                 <div className="input-group">
                   <div className="input-group-prepend">
