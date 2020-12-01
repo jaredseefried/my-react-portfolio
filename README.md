@@ -1,6 +1,6 @@
 # My Developer Portfolio using React.js, Express.js, Mongo.js, Mongoose.js 
 
-![Employee tracker with react](./public/images/readme-image.jpg)
+![Employee tracker with react](./client/public/images/readme-image.jpg)
 
 ## Table of Contents
 
