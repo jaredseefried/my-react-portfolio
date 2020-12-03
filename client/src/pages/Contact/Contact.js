@@ -2,8 +2,14 @@ import React from 'react'
 import './contact.css'
 import GitHubButton from 'react-github-btn'
 import { AiOutlineLinkedin } from 'react-icons/ai'
+// import API from '../../utils/'
 
 function Contact() {
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+
+  }
 
 
   return (
@@ -54,7 +60,7 @@ function Contact() {
                   <textarea className="form-control" name="subject" placeholder="Enter a subject" aria-label="With textarea"></textarea>
                 </div>
               </div>
-              <button type="submit" className="btn btn-primary submit-btn">Submit</button>
+              <button type="submit" onSubmit={onSubmit} className="btn btn-primary submit-btn">Submit</button>
             </div>
           </div>
 
