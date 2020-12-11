@@ -5,6 +5,4 @@ router.route("/")
 .get(contactsController.findAll)
 .post(contactsController.create)
 
-router.route('/portfolio')
-
 module.exports = router
