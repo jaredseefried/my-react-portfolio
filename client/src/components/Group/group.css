@@ -1,0 +1,13 @@
+.port-card-title{
+  margin: 2px 0px;
+}
+
+.port-card-text{
+  padding: 0px 0px !important;
+  color: white;
+}
+
+.port-card-text:hover{
+  color: white;
+  text-decoration: underline;
+}
