@@ -13,11 +13,11 @@ function Navigation() {
             <a className="nav-link" href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/front-end-dev">Front End Dev</a>
+            <a className="nav-link" href="/front-end-dev">Development</a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" href="/back-end-dev">Back End Dev</a>
-          </li>
+          </li> */}
           <li className="nav-item">
             <a className="nav-link" href="/portfolio">Portfolio</a>
           </li>
