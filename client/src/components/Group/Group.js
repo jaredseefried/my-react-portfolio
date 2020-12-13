@@ -26,7 +26,7 @@ function Group() {
             <img className="card-img-top" src={shelfIndulgence} alt="" />
             <div className="card-body body-card">
               <h5 className="card-title port-card-title">Shelf Indulgence</h5>
-              <p className="card-text port-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p className="card-text port-card-text">A book club community where you can search for books using an API, add those books to a MySQL database and communicate in a chat room.</p>
               </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ function Group() {
             <img className="card-img-top" src={mealMatcher} alt="" />
             <div className="card-body body-card">
               <h5 className="card-title port-card-title">Meal Matcher</h5>
-              <p className="card-text port-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p className="card-text port-card-text">A recipe site using Server side and third party API's</p>
             </div>
           </div>
         </div>

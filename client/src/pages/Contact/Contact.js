@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './contact.css'
 import GitHubButton from 'react-github-btn'
 import { AiOutlineLinkedin } from 'react-icons/ai'
@@ -6,41 +6,51 @@ import API from '../../utils/API.js'
 
 function Contact() {
 
-  const [contactForm, setContactForm] = useState({})
+  const [contactForm, setContactForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: ""
+  })
 
   useEffect(() => {
     loadContacts()
   }, [])
 
-  function loadContacts(){
+  function loadContacts() {
     API.getContacts()
-    .then((response)=>{
-      const data = response.data
-      console.log(data)
-    })
-    .catch((error)=>{
-      console.log(error);
-    })
+      .then((response) => {
+        const data = response.data
+        console.log(data)
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
-
 
   function handleInputChange(event) {
     const { name, value } = event.target;
-    setContactForm({...contactForm, [name]: value})
+    setContactForm({ ...contactForm, [name]: value })
   };
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (contactForm.firstName && contactForm.lastName && contactForm.email & contactForm.subject) {
-      API.create({
-        firstName: contactForm.firstName,
-        lastName: contactForm.lastName,
-        email: contactForm.email,
-        submit: contactForm.submit
-      })
-        .then(res => console.log(res))
-        .catch(err => console.log(err));
-    }
+
+    API.contactForm({
+      firstName: contactForm.firstName,
+      lastName: contactForm.lastName,
+      email: contactForm.email,
+      submit: contactForm.submit
+    })
+      .then(() => setContactForm({
+        firstName: "",
+        lastName: "",
+        email: "",
+        subject: ""
+      }))
+      .then(() => loadContacts())
+      .catch(err => console.log(err));
+
   };
 
   return (
@@ -60,13 +70,20 @@ function Contact() {
                 <h6 className="info">jared.seefried@yahoo.com</h6>
               </div>
               <div className="github-btn" >
-                <GitHubButton href="https://github.com/jaredseefried" data-color-scheme="no-preference: light; light: dark; dark: dark;" data-size="large" aria-label="Follow @jaredseefried on GitHub">Follow @jaredseefried</GitHubButton>
+                <GitHubButton 
+                href="https://github.com/jaredseefried" data-color-scheme="no-preference: light; light: dark; dark: dark;" 
+                data-size="large" 
+                aria-label="Follow @jaredseefried on GitHub">Follow @jaredseefried</GitHubButton>
               </div>
               <div className="linkedIn-div">
                 <a target="_blank" href="https://www.linkedin.com/in/jaredseefried/" rel="noreferrer">
-                  <button type="button" className="linkedIn-btn">
-                    <AiOutlineLinkedin className="linkedIn-icon" />
-                    <p className="p-btn">Connect with me on LinkedIn</p>
+                  <button
+                    type="button"
+                    className="linkedIn-btn">
+                    <AiOutlineLinkedin className="linkedIn-icon"
+                    />
+                    <p
+                      className="p-btn">Connect with me on LinkedIn</p>
                   </button>
                 </a>
               </div>
@@ -76,24 +93,53 @@ function Contact() {
                     <div className="input-group-prepend">
                       <span className="input-group-text">Name</span>
                     </div>
-                    <input type="text" onChange={handleInputChange} name="firstName" placeholder="First Name" aria-label="First name" className="form-control" />
-                    <input type="text" onChange={handleInputChange} name="lastName" placeholder="Last Name" aria-label="Last name" className="form-control" />
+
+                    <input type="text"
+                      onChange={handleInputChange} name="firstName"
+                      placeholder="First Name"
+                      aria-label="First name" className="form-control"
+                      value={contactForm.firstName}
+                    />
+
+                    <input type="text"
+                      onChange={handleInputChange}
+                      name="lastName"
+                      placeholder="Last Name"
+                      aria-label="Last name" className="form-control"
+                      value={contactForm.lastName}
+                    />
                   </div>
                 </div>
                 <div className="input-group mb-3">
                   <div className="input-group-prepend">
                     <span className="input-group-text">Email</span>
                   </div>
-                  <input type="text" onChange={handleInputChange} placeholder="Email" name="email" className="form-control" />
+                  <input
+                    type="text"
+                    onChange={handleInputChange} placeholder="Email"
+                    name="email"
+                    className="form-control"
+                    value={contactForm.email}
+                  />
                 </div>
                 <div className="input-group">
                   <div className="input-group-prepend">
                     <span className="input-group-text">Subject</span>
                   </div>
-                  <textarea onChange={handleInputChange} className="form-control" name="subject" placeholder="Enter a subject" aria-label="With textarea"></textarea>
+                  <textarea
+                    onChange={handleInputChange} className="form-control"
+                    name="subject"
+                    placeholder="Enter a subject" aria-label="With textarea"
+                    value={contactForm.subject}>
+                  </textarea>
                 </div>
               </div>
-              <button type="submit"  onClick={handleFormSubmit} className="btn btn-primary submit-btn">Submit</button>
+              <button
+                type="submit"
+                onClick={handleFormSubmit}
+                className="btn btn-primary submit-btn">
+                Submit
+                </button>
             </div>
           </div>
 

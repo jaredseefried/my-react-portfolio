@@ -6,6 +6,6 @@ export default {
   },
 
   contactForm: function(data){
-    return axios.post("/api/contacts")
+    return axios.post("/api/contacts", data)
   }
 }
