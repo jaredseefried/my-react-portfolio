@@ -40,7 +40,7 @@ function Contact() {
       firstName: contactForm.firstName,
       lastName: contactForm.lastName,
       email: contactForm.email,
-      submit: contactForm.submit
+      subject: contactForm.subject
     })
       .then(() => setContactForm({
         firstName: "",
@@ -50,6 +50,8 @@ function Contact() {
       }))
       .then(() => loadContacts())
       .catch(err => console.log(err));
+
+    
 
   };
 
