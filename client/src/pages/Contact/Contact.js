@@ -3,6 +3,7 @@ import './contact.css'
 import GitHubButton from 'react-github-btn'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import API from '../../utils/API.js'
+import axios from 'axios'
 
 function Contact() {
 
@@ -35,7 +36,6 @@ function Contact() {
 
   function handleFormSubmit(event) {
     event.preventDefault();
-
     API.contactForm({
       firstName: contactForm.firstName,
       lastName: contactForm.lastName,
@@ -48,12 +48,24 @@ function Contact() {
         email: "",
         subject: ""
       }))
+      .then(()=>{
+        axios({
+          method: "POST",
+          url: "/api/sendMail",
+          data: contactForm
+        }).then((response) => {
+          if (response.data.status === 'success') {
+            alert("Message Sent.");
+            
+          } else if (response.data.status === 'fail') {
+            alert("Message failed to send.")
+          }
+        })
+      })
       .then(() => loadContacts())
       .catch(err => console.log(err));
-
-    
-
   };
+
 
   return (
     <div className="contact-container">
@@ -72,10 +84,10 @@ function Contact() {
                 <h6 className="info">jared.seefried@yahoo.com</h6>
               </div>
               <div className="github-btn" >
-                <GitHubButton 
-                href="https://github.com/jaredseefried" data-color-scheme="no-preference: light; light: dark; dark: dark;" 
-                data-size="large" 
-                aria-label="Follow @jaredseefried on GitHub">Follow @jaredseefried</GitHubButton>
+                <GitHubButton
+                  href="https://github.com/jaredseefried" data-color-scheme="no-preference: light; light: dark; dark: dark;"
+                  data-size="large"
+                  aria-label="Follow @jaredseefried on GitHub">Follow @jaredseefried</GitHubButton>
               </div>
               <div className="linkedIn-div">
                 <a target="_blank" href="https://www.linkedin.com/in/jaredseefried/" rel="noreferrer">
@@ -89,7 +101,7 @@ function Contact() {
                   </button>
                 </a>
               </div>
-              <div className="form contact-form" action="/submit" method="post">
+              <div className="form contact-form" action="/submit" method="POST">
                 <div className="input-group mb-3">
                   <div className="input-group-prepend">
                     <div className="input-group-prepend">

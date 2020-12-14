@@ -1,6 +1,8 @@
+const { request } = require("express");
 const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
+// const nodemailer = require('nodemailer')
 const app = express();
 const PORT = process.env.PORT || 3001;
 
