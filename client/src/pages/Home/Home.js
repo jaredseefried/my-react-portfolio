@@ -1,11 +1,13 @@
 import React from "react";
 import './home.css'
+import Header from "../../components/Header/Header.js"
 
 function Home() {
 
 
   return (
     <div className="home container-fluid col-12">
+      <Header />
       <div className="row">
         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-div">
            <div className="card home-card">
