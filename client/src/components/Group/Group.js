@@ -9,7 +9,7 @@ function Group() {
   return (
     <div className="group-container col-12">
       <div className="row">
-        <h1 className="h1-title mx-auto display-3">Group Projects</h1>
+        {/* <h1 className="h1-title mx-auto display-3">Group Projects</h1> */}
       </div>
       <div className="row col-12">
         <div className="col-4 card-div">

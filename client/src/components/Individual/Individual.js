@@ -11,7 +11,7 @@ function Individual() {
     <div className="individual-container col-12">
       <div className="row">
         <div className="row mx-auto">
-          <h1 className="h1-title display-3">Individual Projects</h1>
+          {/* <h1 className="h1-title display-3">Individual Projects</h1> */}
         </div>
         <div className="row cards">
           <div className="col-3 card-div">
