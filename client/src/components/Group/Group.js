@@ -17,7 +17,7 @@ function Group() {
             <img className="card-img-top" src={pandemicTracker} alt="" />
             <div className="card-body body-card">
               <h5 className="card-title port-card-title">Pandemic Tracker</h5>
-              <a href="https://my-pandemic-tracker.herokuapp.com/" rel="noreferrer" target="_blank" className="card-text port-card-text">A MERN (Mongo, Express, React and Node) Application using React-Globe and API's to show updated stats on Covid-19. </a>          
+              <a href="https://pandemic-tracking.herokuapp.com/ " rel="noreferrer" target="_blank" className="card-text port-card-text">A MERN (Mongo, Express, React and Node) Application using React-Globe and API's to show updated stats on Covid-19. </a>          
             </div>
           </div>
         </div>
