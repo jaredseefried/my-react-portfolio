@@ -1,5 +1,4 @@
 import axios from 'axios'
-// import nodemailer from 'nodemailer'
 
 export default {
   getContacts: function () {
@@ -9,4 +8,16 @@ export default {
   contactForm: function (data) {
     return axios.post("/api/contacts", data)
   },
+
+  sendMessage: function(data){
+    axios.post("/api/sendMail", data)
+     .then((response) => {
+      if (response.data.status === 'success') {
+        alert("Message Sent.");
+        
+      } else if (response.data.status === 'fail') {
+        alert("Message failed to send.")
+      }
+    })
+  }
 }

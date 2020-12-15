@@ -3,7 +3,6 @@ import './contact.css'
 import GitHubButton from 'react-github-btn'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import API from '../../utils/API.js'
-import axios from 'axios'
 
 function Contact() {
 
@@ -48,20 +47,7 @@ function Contact() {
         email: "",
         subject: ""
       }))
-      .then(()=>{
-        axios({
-          method: "POST",
-          url: "/api/sendMail",
-          data: contactForm
-        }).then((response) => {
-          if (response.data.status === 'success') {
-            alert("Message Sent.");
-            
-          } else if (response.data.status === 'fail') {
-            alert("Message failed to send.")
-          }
-        })
-      })
+      .then(()=> API.sendMessage())
       .then(() => loadContacts())
       .catch(err => console.log(err));
   };

@@ -9,8 +9,8 @@ mongoose.connect(
 
 const contactSeeds = [
   {
-    firstName: "FirstNameSeed",
-    lastName: "LastNameSeed",
+    firstName: "firstName",
+    lastName: "lastName",
     email: "seed@email.com",
     subject: "Subject Seed"
   }
