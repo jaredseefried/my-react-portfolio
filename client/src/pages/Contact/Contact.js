@@ -20,8 +20,8 @@ function Contact() {
   function loadContacts() {
     API.getContacts()
       .then((response) => {
-        const data = response.data
-        console.log(data)
+        // const data = response.data
+        console.log("Mongo Connected - Array Generated")
       })
       .catch((error) => {
         console.log(error);
@@ -51,7 +51,6 @@ function Contact() {
       .then(() => loadContacts())
       .catch(err => console.log(err));
   };
-
 
   return (
     <div className="contact-container">
