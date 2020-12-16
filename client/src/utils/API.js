@@ -10,7 +10,7 @@ export default {
   },
 
   sendMessage: function(data){
-    axios.post("/api/sendMail", data)
+    return axios.post("/api/sendMail", data)
      .then((response) => {
       if (response.data.status === 'success') {
         alert("Message Sent.");

@@ -38,7 +38,7 @@ router.route("/")
       
       Respond back at ${email}
       
-      Jared's Portfolio Contact Form!`
+      Jared's Portfolio Contact Form!` 
     }
   
     transporter.sendMail(mail, (err, data) => {
