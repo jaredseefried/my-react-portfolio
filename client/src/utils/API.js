@@ -17,6 +17,7 @@ export default {
         
       } else if (response.data.status === 'fail') {
         alert("Message failed to send.")
+        
       }
     })
   }
