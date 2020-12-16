@@ -8,10 +8,7 @@ const transporter = nodemailer.createTransport({
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD
-  },
-  debug: true,
-  logger: true,
-  secure: false
+  }
 });
 
 transporter.verify(function (error, success) {

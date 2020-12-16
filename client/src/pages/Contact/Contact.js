@@ -3,6 +3,7 @@ import './contact.css'
 import GitHubButton from 'react-github-btn'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import API from '../../utils/API.js'
+import axios from 'axios'
 
 function Contact() {
 
@@ -20,7 +21,8 @@ function Contact() {
   function loadContacts() {
     API.getContacts()
       .then((response) => {
-        // const data = response.data
+        const data = response.data
+        console.log(data);
         console.log("Mongo Connected - Array Generated")
       })
       .catch((error) => {
@@ -47,7 +49,20 @@ function Contact() {
         email: "",
         subject: ""
       }))
-      .then(()=> API.sendMessage())
+      .then(()=>{
+        axios({
+          method: "POST",
+          url: "/api/sendMail",
+          data: contactForm
+        }).then((response) => {
+          if (response.data.status === 'success') {
+            alert("Message Sent.");
+            
+          } else if (response.data.status === 'fail') {
+            alert("Message failed to send.")
+          }
+        })
+      })
       .then(() => loadContacts())
       .catch(err => console.log(err));
   };
